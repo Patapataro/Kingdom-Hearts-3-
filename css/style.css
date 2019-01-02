@@ -31,19 +31,21 @@ video {
   height: 338px;
 }
 
-#counter {  
+#date {  
   position: absolute;
-  top: 100px;
+  bottom: 10px;
   left: 50%;
-  margin-left: -180px;
-  color: white;
+  margin-left: -230px;
   font-size: 100px;
+  color: white;
   font-family: 'king';
+  text-shadow: -4px 4px 10px black;
+
 }
 
 .flip-clock-wrapper {
   position: absolute;
-  bottom: 50px;
+  bottom: 120px;
   left: 50%;
   margin-left: -310px;
   font-family: 'king';
@@ -123,6 +125,14 @@ video {
 }
 
 @media screen and (max-height: 500px) {
+  #logo {
+    width: 278px;
+    height: 169px;
+    margin-left: -139px;
+  }
+}
+
+@media screen and (max-height: 400px) {
   #logo {
     display: none;
   }
