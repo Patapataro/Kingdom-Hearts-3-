@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/flipclock.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/flipclock.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <video autoplay muted loop id="video">
+      <source src="content/KINGDOM HEARTS III – Opening Movie Trailer.mp4" type="video/mp4">
+    </video>
+  <img id="image" src="content/Background.jpg" alt="Kingdom Hearts 3">
+  
+  <img id="logo" src="content/Kingdom_Hearts_III_Logo.png" alt="logo">
+
+   <!-- <p id="counter"></p> -->
+
+  <div class="clock"></div>
+
+  <script type="text/javascript">
+    var clock;
+
+    $(document).ready(function() {
+
+      // Grab the current date
+      var currentDate = new Date();
+
+      // Set some date in the past. In this case, it's always been since Jan 1
+      var pastDate  = new Date(currentDate.getFullYear(), 0, 25);
+
+      // Calculate the difference in seconds between the future and current date
+      var diff = pastDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+      // Instantiate a coutdown FlipClock
+      clock = $('.clock').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+    });
+  </script>
+
+  <!-- <script src="js/script.js"></script> -->
+</body>
+</html>
