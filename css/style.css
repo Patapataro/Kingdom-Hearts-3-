@@ -89,15 +89,15 @@ video {
     display: none;
   }
 
-  #counter {  
-    top: 50px;
-    margin-left: -95px;
+  #date {
     font-size: 60px;
+    top: 10px;
+    margin-left: -138px;
   }
 
   .flip-clock-wrapper {
     top: 100px;
-    margin-left: -165px;
+    margin-left: -150px;
   }
 
   .flip-clock-wrapper ul{
