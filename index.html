@@ -28,11 +28,16 @@
     </video>
   <img id="image" src="content/Background.jpg" alt="Kingdom Hearts 3">
   
-  <img id="logo" src="content/Kingdom_Hearts_III_Logo.png" alt="logo">
 
    <p id="date">January 29, 2019</p>
 
-  <div class="clock"></div>
+  <div class="clock-position">
+    <img id="logo" src="content/Kingdom_Hearts_III_Logo.png" alt="logo">
+
+    <div class="clock"></div>
+    
+    <p id="date">January 29, 2019</p>
+  </div>
 
   <script type="text/javascript">
     var clock;
@@ -43,7 +48,7 @@
       var currentDate = new Date();
 
       // Set some date in the past. In this case, it's always been since Jan 1
-      var pastDate  = new Date(currentDate.getFullYear(), 0, 25);
+      var pastDate  = new Date(2024, 0, 25);
 
       // Calculate the difference in seconds between the future and current date
       var diff = pastDate.getTime() / 1000 - currentDate.getTime() / 1000;
